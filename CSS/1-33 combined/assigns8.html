@@ -1,0 +1,329 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Doc</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+            }
+
+            .black{
+                background-color: black;
+                position: absolute;
+                z-index: 1;
+                left: 20px;
+                top: 30px;
+            }
+
+            .blue{
+                background-color: dodgerblue;
+                position: absolute;
+                z-index: 2;
+                left: 20px;
+                top: 20px;
+            }
+
+            .green{
+                background-color: rgb(25, 134, 122);
+                position: absolute;
+                z-index: 3;
+                left: 30px;
+                top: 30px;
+            }
+
+            .red{
+                background-color: rgb(255, 30, 30);
+                position: absolute;
+                z-index: 4;
+                left: 40px;
+                top: 40px;
+            }
+
+            .asi2{
+                font-family: Arial, Helvetica, sans-serif;
+                width: 400px;
+                background-color: rgb(230, 230, 230);
+                padding: 20px;
+                padding-bottom: 40px;
+                word-spacing: 2px;
+                text-align: center;
+                line-height: 190%;
+                border-top: 2px solid rgb(255, 30, 30);
+                border-bottom: 2px solid rgb(255, 30, 30);
+                border-right: 2px solid dodgerblue;
+                border-left: 2px solid dodgerblue;
+                position: relative;
+                margin: auto;
+            }
+
+            .top-left{        
+                display: block;        
+                width: 34px;
+                height: 24px;
+                background-color: dodgerblue;
+                position: absolute;
+                top: -15px;
+                left: -18px;
+                border-right: 2px solid rgb(255, 30, 30);
+            }
+
+            .bottom-left{     
+                display: block;           
+                width: 34px;
+                height: 24px;
+                background-color: dodgerblue;
+                position: absolute;
+                bottom: -12px;
+                left: -18px;
+                border-right: 2px solid rgb(255, 30, 30);
+            }
+
+            .top-right{      
+                display: block;          
+                width: 34px;
+                height: 24px;
+                background-color: dodgerblue;
+                position: absolute;
+                top: -15px;
+                right: -18px;
+                border-left: 2px solid rgb(255, 30, 30);
+            }
+
+            .bottom-right{   
+                display: block;             
+                width: 34px;
+                height: 24px;
+                background-color: dodgerblue;
+                position: absolute;
+                bottom: -12px;
+                right: -18px;
+                border-left: 2px solid rgb(255, 30, 30);
+            }
+
+            span{
+                color: white;
+                line-height: 160%;
+            }
+            
+            .main{
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                width: 400px;
+                margin: auto;
+                list-style: none;
+            }
+            
+            .back{
+                background-color: white;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+
+            .circle{  
+                list-style: circle;
+                list-style-position: inside;
+            }
+
+            .btw{
+                background-color: rgb(230, 230, 230);
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .ltn{
+                list-style-type:upper-roman;
+            }
+
+            li span{
+                padding-left: 35px;
+            }
+
+            .out{
+                list-style-position: outside;
+                margin-left: -10px;
+            }
+
+            .ins{
+                list-style-position: inside;
+                margin-left: -40px;
+            }
+
+            img{
+                width: 70px;
+                height: 90px;
+                border: 5px solid rgb(255, 255, 255);
+            }
+
+            table{
+                width: 700px;
+                margin: auto;
+                background-color: #eee;
+                font-family: Arial, Helvetica, sans-serif;
+                border-spacing: 0;
+                text-align: center;
+            }
+
+            table td {
+                padding: 15px;
+                border: 1px solid rgb(255, 255, 255);
+            }
+
+            table thead td {
+                background-color: #423838;
+                color: #FFF;
+                font-weight: bold;
+            }
+
+            button{
+                color: white;
+                background-color: rgb(92, 174, 255);
+                border-color: rgb(92, 174, 255);
+                border-radius: 0px;
+            }
+
+            .del{
+                background-color: rgb(220, 0, 90);
+                border-color: rgb(220, 0, 90);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="green"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="black"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <div class="asi2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+            similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+            laudantium mollitia atque! Laborum ea nam doloribus.
+            <span class="top-left">1</span>
+            <span class="bottom-left">2</span>
+            <span class="top-right">3</span>
+            <span class="bottom-right">4</span>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <ul class="main">
+            <li class="btw">
+                HTML
+                <br>
+                <br>
+                <ol start="10" class="out">
+                    <li class="back">Slim</li>
+                    <li class="back">Pugjs</li>
+                    <li class="back">HAML</li>
+                </ol>
+            </li>
+            <li class="btw">
+                CSS
+                <br>
+                <br>
+                <ol class="ltn out" start="10">
+                    <li class="back">SASS</li>
+                    <li class="back">LESS</li>
+                    <li class="back">PostCSS</li>
+                </ol>
+            </li>
+            <li class="btw">
+                JavaScript
+                <br>
+                <br>
+                <ul class="ins">
+                    <li class="back circle">Vuejs</li>
+                    <li class="back circle">Sveltej</li>
+                    <li class="back circle">Sveltej</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <td>Avatar</td>
+                    <td>Group</td>
+                    <td>Name</td>
+                    <td>Points</td>
+                    <td>Control</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../imgs/Eren_meets_Yeagerists.webp" alt="eren"></td>
+                    <td>Ninja</td>
+                    <td>Ahmed Khalifa</td>
+                    <td>120</td>
+                    <td>
+                       <button>View</button>
+                       <button class="del">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../imgs/leviack.jpg" alt="levi"></td>
+                    <td rowspan="2">Shades</td>
+                    <td>Shady Nabil</td>
+                    <td>180</td>
+                    <td>
+                        <button>View</button>    
+                        <button class="del">Delete</button>  
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../imgs/Eren_meets_Yeagerists.webp" alt="eren"></td>
+            
+                    <td>Eman Mohamed</td>
+                    <td>160</td>
+                    <td>
+                        <button>View</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../imgs/leviack.jpg" alt="levi"></td>
+                    <td rowspan="2">Valhala</td>
+                    <td>Mohamed Ibrahim</td>
+                    <td>190</td>
+                    <td>
+                       <button>View</button>
+                       <button class="del">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../imgs/Eren_meets_Yeagerists.webp" alt="eren"></td>
+
+                    <td>Noor Atef</td>
+                    <td>110</td>
+                    <td>
+                       <button>View</button>
+                       <button class="del">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../imgs/leviack.jpg" alt="levi"></td>
+                    <td>Union</td>
+                    <td>Mahmoud Adel</td>
+                    <td>90</td>
+                    <td>
+                        <button>View</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Doc</title>
+        <style>
+            .parent{
+
+                width: 800px;
+                background-color:#eee;
+                padding: 0px;
+
+            }
+
+            .clear{
+
+                clear: both;
+
+            }
+            .full{
+                
+                width: calc(100% - 30px);
+                font-weight: bold;
+
+            }
+            .third{
+
+                width: calc(( 100% - 60px ) / 3);
+                
+            }
+            .half{
+
+                width: calc(( 100% - 45px ) / 2);
+                
+            }
+            .quart{
+
+                width: calc(( 100% - 75px ) / 4);
+                margin-bottom: 15px;
+
+            }
+
+            .third,.half,.quart,.full{
+
+                background-color:lightgrey;
+                text-align: center;
+                margin-top: 15px;
+                margin-left: 15px;
+                padding-top: 10px;
+                height: 30px;
+                float: left;
+
+            }
+
+            .normal,.one,.two {
+
+                width: 400px;
+                height: 20px;
+                padding: 10px;
+                margin: 20px;
+                background-color:gray;
+
+            }
+
+            .one{
+                background-color: rgb(125 128 128 / 0.1);
+            }
+
+            .two{
+                opacity: 0.1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="full">Full width</div>
+            <div class="clear"></div>
+            <div class="third">1/3</div>
+            <div class="third">1/3</div>
+            <div class="third">1/3</div>
+            <div class="clear"></div>
+            <div class="half">1/2</div>
+            <div class="half">1/2</div>
+            <div class="clear"></div>
+            <div class="quart">1/4</div>
+            <div class="quart">1/4</div>
+            <div class="quart">1/4</div>
+            <div class="quart">1/4</div>
+            <div class="clear"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <div class="normal">Normal</div>
+        <div class="one">One</div>
+        <div class="two">Two</div>
+    </body>
+</html>
